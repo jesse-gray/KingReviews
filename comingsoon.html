@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--============================================HEAD============================================-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="wiewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href='https://fonts.googleapis.com/css?family=Milonga' rel='stylesheet'>
+	<title>Coming Soon</title>
+	<!--Tell Web-browser the external CSS file-->
+	<link href="css/style1.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<!--============================================BODY============================================-->
+<body onload="comingSoonPageFunctions()">
+	<!--------------------------------------HEADER AREA--------------------------------------->
+	<!--Add "header" area on top: this area is always stuck on top of website, no scroll up-->
+	<header>
+		<!--Add logo element to the left hand side of the "header" area-->
+		<a href="index.html">
+			<img src="media/images/logo.jpg" id="logo" alt="Logo"/>
+		</a>
+		<!--Add a title element to the right hand side of the logo-->
+		<h1>King Reviews</h1>
+		<!--Add the "navigation bar" on the lef hand side of the "header" area-->
+		<nav>
+			<ul>
+				<li><a class="dropbtn" href="index.html">Home</a></li>
+				<li><div class="dropdown">
+					<button class="dropbtn">About</button>
+					<div class="dropdown-content">
+						<a href="aboutme.html">About Me</a>
+						<a href="aboutthesite.html">About the Site</a>
+					</div>
+					</div>
+				</li>
+				<li><div class="dropdown">
+					<a href="movies.html" class="dropbtn">Movies</a>
+					<div class="dropdown-content">
+						<a href="genres.html??genre=Sci-Fi">Sci-Fi</a>
+						<a href="genres.html??genre=Horror">Horror</a>
+						<a href="genres.html??genre=Action">Action</a>
+						<a href="genres.html??genre=Comedy">Comedy</a>
+						<a href="genres.html??genre=Drama">Drama</a>
+					</div>
+					</div>
+				</li>
+				<li><a class="dropbtn" href="comingsoon.html">Coming Soon</a></li>
+				<li><div class="dropdown">
+					<button class="dropbtn">News</button>
+					<div class="dropdown-content">
+						<a href="sitenews.html">Site News</a>
+						<a href="movienews.html">Movie News</a>
+					</div>
+					</div>
+				</li>
+				<li><div class="dropdown">
+					<button class="dropbtn">Contact</button>
+					<div class="dropdown-content">
+						<a href="socialmedia.html">Social Media</a>
+						<a href="contactinfo.html">Contact Info</a>
+					</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!---------------------------------------MAIN AREA---------------------------------------->
+	<!--Add the "main" area below "header" area-->
+	<main>
+	<div id="welcome">
+		<h2>Coming Soon</h2>
+		<p>These are my planned reviews coming soon, whether it is a new movie or about to break, or an old movie I have yet to review (or even see). Although I wont be putting all of my planned reviews here, I will update with any major reviews about to be released.
+		</p>
+	</div>
+	<div id="comingSoonArticles">
+		<!--Add an "article" element 1: Movie 1-->
+		<article class="horizontalArticle">
+			<h4 class="movieTitle"></h4>
+			<img class="moviePoster" src="" alt="">
+			<p class="movieSynopsis">
+			</p>
+		</article>
+		<!--Add an "article" element 2: Movie 2-->
+		<article class="horizontalArticle">
+			<h4 class="movieTitle"></h4>
+			<img class="moviePoster" src="" alt="">
+			<p class="movieSynopsis">
+			</p>
+		</article>
+		<!--Add an "article" element 3: Movie 3-->
+		<article class="horizontalArticle">
+			<h4 class="movieTitle"></h4>
+			<img class="moviePoster" src="" alt="">
+			<p class="movieSynopsis">
+			</p>
+		</article>
+	</div>
+	
+	<script type="text/javascript" src="javascript/javascript.js"></script>
+	</main>	
+	<!--------------------------------------FOOTER AREA--------------------------------------->
+	<!--Add the "footer" section below "main" area-->
+	<footer>
+		<p>Copyright &copy;2018 EIT | Privacy Policy | Website development by Jesse Gray</p>
+		<p>Read the <a href="statement.html">statement of authenticity</a> <span>
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			View the <a href="bibliography.html">bibliography</a> </span>
+		</p>
+	</footer>
+</body>
+</html>

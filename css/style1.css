@@ -1,0 +1,503 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Milonga';
+	background-color: #A070FF;
+}
+/*Set style for <header> area*/
+header {
+	position:relative;
+	display: grid;
+	grid-template-columns: 150px auto;
+	grid-template-rows: 95px 50px;
+}
+
+h1 {
+	font-size: 50px;
+	padding: 0 10px;
+	
+}
+
+/*Set style for logo*/
+#logo {
+	grid-row-start: 1;
+	grid-row-end: -1;
+	width: 156px;
+	height: 156px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+	border-botom: 0;
+}
+
+/*Set style for navigation bar*/
+header nav {
+	grid-column-start: 2;
+}
+
+nav ul {
+	width: 99.7%;
+	position: relative;
+	left: 3px;
+	bottom: 2px;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+	list-style: none;
+	background-color: #4E74FF;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline-block;
+	background-color: #4E74FF;
+	
+}
+
+nav ul li a {
+	text-decoration: none;
+	display: block;
+	color: black;
+}
+
+nav ul li a:hover { /*pseudo hover must come after visited */
+	background-color: #4ECDFF;
+}
+
+/*Set styles for dropdown menu in navigation bar*/
+.dropbtn {
+    background-color: #4E74FF;
+    color: black;
+    padding: 16px;
+    font-size: 20px;
+    border: none;
+	font-family: 'Milonga';
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #4E74FF;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #4ECDFF;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #4ECDFF;}
+
+/*Styles for index page*/
+/*Styles for welcome section*/
+#welcome {
+	padding: 10px;
+}
+
+/*Set styles for features images section*/
+
+.mySlides {
+	display: none;
+	width: 111.2%;
+	height: 100%;
+	overflow: hidden;
+	margin: auto;
+}
+
+/* Slideshow container */
+#featuredImages {
+  width: 1000px;
+  height: 500px;
+  margin: auto;
+  border-style: solid;
+  border-color: black;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 10s;
+  animation-name: fade;
+  animation-duration: 10s;
+}
+
+@-webkit-keyframes fade {
+  0% {opacity: .4} 
+  25% {opacity: 1}
+  75% {opacity: 1}
+  100% {opacity: .4}
+}
+
+@keyframes fade {
+  0% {opacity: .4} 
+  12% {opacity: 1}
+  88% {opacity: 1}
+  100% {opacity: .4}
+}
+
+/*Set styles for featured reviews*/
+#featuredReviews, #aboutMeArticles, #exampleReviews {
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	align-items: top;
+	text-decoration: none;
+}
+
+.verticalArticle {
+	height: auto;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+	background-color:#4E74FF;
+	float: left;
+	margin: 5%;
+	width: auto;
+	padding: 0;
+	transition: 0.6s;
+}
+
+.verticalArticle p, .verticalArticle a {
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+}
+
+.verticalArticle h4 {
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.7em;
+}
+
+.verticalArticle:hover {
+	background-color: #4ECDFF;
+}
+
+.verticalArticle:hover img {
+	opacity: 1;
+}
+
+.moviePoster {
+	margin: 0;
+	padding: 0;
+	opacity: 0.5;
+	width: 100%;
+	height: auto;
+	position: relative;
+	bottom: -5px;
+	transition: opacity 1s;
+}
+
+.moviePoster:hover {
+	opacity: 1;
+}
+
+.reviewPage .moviePoster {
+	opacity: 0.8;
+	border-style: solid;
+	border-color: black;
+}
+
+/*social media icons*/
+
+.icons {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 50% 50%;
+}
+
+.icon {
+	margin: 15%;
+	width: 70%;
+	height: auto;
+}
+
+/*carousel styles*/
+#carousel {
+	margin: 0 110px;
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	align-items: top;
+}
+
+.carouselPoster {
+	margin: 0;
+	padding: 0;
+	opacity: 0.5;
+	width: 100%;
+	height: auto;
+	position: relative;
+	bottom: -5px;
+	transition: 1s;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-style: solid;
+  border-radius: 0 3px 3px 0;
+  background-color: #4E74FF;
+  left: 0;
+  text-align: center;
+  width: 110px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  left: auto;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+}
+
+.prev {
+	border-left: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: #4ECDFF;
+}
+
+/*Horizontal article pages styles*/
+
+.horizontalArticle {
+	display: grid;
+	grid-template-columns: 100px auto;
+	grid-template-rows: auto auto auto;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+	background-color:#4E74FF;
+	margin: 2% 3%;
+	width: auto;
+	padding: 10px;
+	transition: 0.6s ease;
+}
+
+.horizontalArticle h4 {
+	font-size: 25px;
+	margin: 10px;
+}
+
+.horizontalArticle img {
+	grid-row-start: 1;
+	grid-row-end: -1;
+	width: 100px;
+	height: auto;
+	opacity: 0.5;
+	transition: 0.6s;
+}
+
+.horizontalArticle p {
+	margin: 10px;
+}
+
+#movieNewsArticles a {
+	color: black;
+	text-decoration: none;
+}
+
+.horizontalArticle:hover {
+	background-color: #4ECDFF;
+}
+
+.horizontalArticle:hover img {
+	opacity: 1;
+}
+
+/*Movie reviews page styles*/
+.reviewPage {
+	display: grid;
+	grid-template-columns: 225px auto 10%;
+	grid-template-rows: 47% 13% 40%;
+	margin: 20px 0;
+}
+
+.movieDetails {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-row-start: 2;
+	grid-row-end: -1;
+	margin: 10px 0;
+	padding: 0px 5px;
+	border-style: solid;
+	border-color: black;
+	background-color: #4E74FF;
+}
+
+.movieClassification, .movieGenre, .movieRuntime, .movieReleaseDate, .movieDirector {
+	text-align: center;
+}
+
+#detailsTitle {
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.reviewMain {
+	grid-column-start: 2;
+	grid-column-end: -1;
+	grid-row-start: 1;
+	grid-row-end: 3;
+	padding: 0 10px;
+}
+
+.summaryArea {
+	grid-column-start: 2;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	crid-template-rows: auto auto;
+	margin: 10px;
+	padding: 0px 5px;	
+	border-style: solid;
+	border-color: black;
+	background-color: #4E74FF;
+}
+
+.summary {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	text-align: center;
+	font-size: 1em;
+}
+
+.flipCard {
+	background-color: #4E74FF;
+	margin: 10px 5px;
+	border-style: solid;
+	border-color: black;
+	
+}
+
+.rating {
+	margin: auto;
+	padding: 0px 5px;
+	background-color: #4E74FF;
+	text-align: center;
+	transition: transform 0.6s;
+	transform-style: preserve-3d;
+}
+
+.flipCard:hover .rating {
+  transform: rotateY(180deg);
+}
+
+.flipCardFront, .flipCardBack {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.flipCardBack {
+	transform: rotateY(180deg);
+	font-weight: bold;
+	font-size: 3.5em;
+	text-align: center;
+}
+
+/*Contact info page styles*/
+/*Contact form*/
+
+#contactForm {
+	padding: 20px;
+}
+
+#contactForm img {
+	width: 300px;
+	height: auto;
+	position: absolute;
+	right: 10px;
+}
+
+input[type=text], textarea {
+	font: 400 13.3333px Arial;
+	background-color: #4ECDFF;
+    width: 70%;
+    padding: 12px;
+    border-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+	border-width: 2px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+#subject {
+	width: 100%;
+}
+
+input[type=submit] {
+	align: center;
+    background-color: #4E74FF;
+    color: black;
+    padding: 12px 20px;
+	border-style: solid;
+    border-color: black;
+    border-radius: 4px;
+    cursor: pointer;
+	transition: 0.6s ease;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #4ECDFF;
+}
+
+.submitButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+/*Set styles for <footer> element */
+footer {
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.7);
+	background-color: #4E74FF;
+	color: black;
+	height: 10vh;
+	min-height: 6em;
+	padding: .5em 2em;
+	margin: 1em;
+}
+
+footer p {
+	text-align: center;
+}
+
+footer a {
+	display: inline;
+	text-align: center;
+	color: blue;
+}

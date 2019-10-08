@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--============================================HEAD============================================-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="wiewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href='https://fonts.googleapis.com/css?family=Milonga' rel='stylesheet'>
+	<title>Site News</title>
+	<!--Tell Web-browser the external CSS file-->
+	<link href="css/style1.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<!--============================================BODY============================================-->
+<body>
+	<!--------------------------------------HEADER AREA--------------------------------------->
+	<!--Add "header" area on top: this area is always stuck on top of website, no scroll up-->
+	<header>
+		<!--Add logo element to the left hand side of the "header" area-->
+		<a href="index.html">
+			<img src="media/images/logo.jpg" id="logo" alt="Logo"/>
+		</a>
+		<!--Add a title element to the right hand side of the logo-->
+		<h1>King Reviews</h1>
+		<!--Add the "navigation bar" on the lef hand side of the "header" area-->
+		<nav>
+			<ul>
+				<li><a class="dropbtn" href="index.html">Home</a></li>
+				<li><div class="dropdown">
+					<button class="dropbtn">About</button>
+					<div class="dropdown-content">
+						<a href="aboutme.html">About Me</a>
+						<a href="aboutthesite.html">About the Site</a>
+					</div>
+					</div>
+				</li>
+				<li><div class="dropdown">
+					<a href="movies.html" class="dropbtn">Movies</a>
+					<div class="dropdown-content">
+						<a href="genres.html??genre=Sci-Fi">Sci-Fi</a>
+						<a href="genres.html??genre=Horror">Horror</a>
+						<a href="genres.html??genre=Action">Action</a>
+						<a href="genres.html??genre=Comedy">Comedy</a>
+						<a href="genres.html??genre=Drama">Drama</a>
+					</div>
+					</div>
+				</li>
+				<li><a class="dropbtn" href="comingsoon.html">Coming Soon</a></li>
+				<li><div class="dropdown">
+					<button class="dropbtn">News</button>
+					<div class="dropdown-content">
+						<a href="sitenews.html">Site News</a>
+						<a href="movienews.html">Movie News</a>
+					</div>
+					</div>
+				</li>
+				<li><div class="dropdown">
+					<button class="dropbtn">Contact</button>
+					<div class="dropdown-content">
+						<a href="socialmedia.html">Social Media</a>
+						<a href="contactinfo.html">Contact Info</a>
+					</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!---------------------------------------MAIN AREA---------------------------------------->
+	<!--Add the "main" area below "header" area-->
+	<main>
+	<div id="welcome">
+		<h2>Site News</h2>
+		<p>This is all of the news that is site specific, call it my very own personal blog spot that designed to keep you, the user, informed of everything going on around here. I will put updates on planned movies (alogside the Coming Soon page), updates to the site, and user feedback in this section. As awlasy, enjoy the content.
+		</p>
+	</div>
+	<div id="siteNewsArticles">
+		<!--Add an "article" element 1: Site News 1-->
+		<article class="horizontalArticle">
+			<img src="medcia/images/authorportait.jpg" alt="Author Portrait">
+			<p> Planning to finally watch one of the classics in my (far too long) <em>to-watch-list</em>, The Godfather! I have added it to the Coming Soon page, and will watch the movie soon, and the review wont be far after that.<br><br>Timeframe: 2-3 days away, hopefully.
+			</p>
+		</article>
+		<!--Add an "article" element 2: Site News 2-->
+		<article class="horizontalArticle">
+			<img src="authorportait.jpg" alt="Author Portrait">
+			<p>As per user feedback, I have finally joined the masses and created a Twitter account. Although I am still getting used to the platform, i will strive to keep it updated. Links have been added in the Social Media and About Me pages.<br><br>You will be able to find all of the info that is on my other social media accounts (Facebook, Instagram, Youtube) on this new Twitter account, so for those that are Twitter only, there is no need to visit the other pages. Enjoy, while i struggle to understand how to send a single tweet...
+			</p>
+		</article>
+		<!--Add an "article" element 3: Site News 3-->
+		<article class="horizontalArticle">
+			<img src="authorportait.jpg" alt="Author Portrait">
+			<p>I have split the Abouut page into two seperate pages, the About Me, and About the Site pages respectively, hopefully this will help people to understand those two concepts a bit better as I recieved feedback that the original About page was a little too much. Hop over to the About pages and check them out, give me some feeback, good or bad, and most importantly, enjoy!
+			</p>
+		</article>
+	</div>
+	
+	<script type="text/javascript" src="javascript/javascript.js"></script>
+	</main>	
+	<!--------------------------------------FOOTER AREA--------------------------------------->
+	<!--Add the "footer" section below "main" area-->
+	<footer>
+		<p>Copyright &copy;2018 EIT | Privacy Policy | Website development by Jesse Gray</p>
+		<p>Read the <a href="statement.html">statement of authenticity</a> <span>
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			View the <a href="bibliography.html">bibliography</a> </span>
+		</p>
+	</footer>
+</body>
+</html>

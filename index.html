@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--============================================HEAD============================================-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="wiewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href='https://fonts.googleapis.com/css?family=Milonga' rel='stylesheet'>
+	<title>King Reviews</title>
+	<!--Tell Web-browser the external CSS file-->
+	<link href="css/style1.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<!--============================================BODY============================================-->
+<body onload="indexPageFunctions()">
+	<!--------------------------------------HEADER AREA--------------------------------------->
+	<!--Add "header" area on top: this area is always stuck on top of website, no scroll up-->
+	<header>
+		<!--Add logo element to the left hand side of the "header" area-->
+		<a href="index.html">
+			<img src="media/images/logo.jpg" id="logo" alt="Logo"/>
+		</a>
+		<!--Add a title element to the right hand side of the logo-->
+		<h1>King Reviews</h1>
+		<!--Add the "navigation bar" on the lef hand side of the "header" area-->
+		<nav>
+			<ul>
+				<li><a class="dropbtn" href="index.html">Home</a></li>
+				<li><div class="dropdown">
+					<button class="dropbtn">About</button>
+					<div class="dropdown-content">
+						<a href="aboutme.html">About Me</a>
+						<a href="aboutthesite.html">About the Site</a>
+					</div>
+					</div>
+				</li>
+				<li><div class="dropdown">
+					<a href="movies.html" class="dropbtn">Movies</a>
+					<div class="dropdown-content">
+						<a href="genres.html??genre=Sci-Fi">Sci-Fi</a>
+						<a href="genres.html??genre=Horror">Horror</a>
+						<a href="genres.html??genre=Action">Action</a>
+						<a href="genres.html??genre=Comedy">Comedy</a>
+						<a href="genres.html??genre=Drama">Drama</a>
+					</div>
+					</div>
+				</li>
+				<li><a class="dropbtn" href="comingsoon.html">Coming Soon</a></li>
+				<li><div class="dropdown">
+					<button class="dropbtn">News</button>
+					<div class="dropdown-content">
+						<a href="sitenews.html">Site News</a>
+						<a href="movienews.html">Movie News</a>
+					</div>
+					</div>
+				</li>
+				<li><div class="dropdown">
+					<button class="dropbtn">Contact</button>
+					<div class="dropdown-content">
+						<a href="socialmedia.html">Social Media</a>
+						<a href="contactinfo.html">Contact Info</a>
+					</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!---------------------------------------MAIN AREA---------------------------------------->
+	<!--Add the "main" area below "header" area-->
+	<main>
+	<div id="welcome">
+		<h2>Welcome</h2>
+		<p>Welcome to King Reviews! This is a collection of reviews made by me, and hopefully they will help you to decide whether they are worth the watch for you as well. The main purpose of the site is to provide critical reviews based on my opinion and enjoyment alone, so if you enjoy the same movies i do, they should be a good indication of whther you will enjoy them too. I also provide any major news in the movie industry, just pop on over to the News section! Enjoy the site and hopefully my opnions can be of help whether you are deciding what to watch on the couch or in the cinema!
+		<br><br>
+		Disclaimer - this site will have spoilers within its reviews, this will be your only warning, so proceed with caution if you are wanting to watch the movies spoiler free.
+		</p>
+	</div>
+	<div id="featuredImages" >
+		<div class="mySlides fade">
+			<a href="reviews.html??title=interstellar">
+				<img src="media/images/interstellarfeature.jpg" style="width:90%">
+			</a>
+		</div>
+
+		<div class="mySlides fade">
+			<a href="reviews.html??title=aQuietPlace">
+				<img src="media/images/aquietplacefeature.jpg" style="width:90%">
+			</a>
+		</div>
+
+		<div class="mySlides fade">
+			<a href="reviews.html??title=avengersInfinityWar">
+				<img src="media/images/avengersinfinitywarfeature.jpg" style="width:90%">
+			</a>
+		</div>
+
+		<div class="mySlides fade">
+			<a href="reviews.html??title=tropicThunder">
+				<img src="media/images/tropicthunderfeature.jpg" style="width:90%">
+			</a>
+		</div>
+
+		<div class="mySlides fade">
+			<a href="reviews.html??title=whiplash">
+				<img src="media/images/whiplashfeature.jpg" style="width:90%">
+			</a>
+		</div>
+	</div>
+	<div id="featuredReviews">
+		
+		<!--Add an "article" element 1: Feature 1-->
+		<a class="movieLink" href="">
+		<article class="verticalArticle">
+			<h4 class="movieTitle"></h4>
+			<img class="moviePoster" src="" alt="">
+			<p class="movieSynopsis">
+			</p>
+		</article>
+		</a>
+		<!--Add an "article" element 2: Feature 2-->
+		<a class="movieLink" href="">
+		<article class="verticalArticle">
+			<h4 class="movieTitle"></h4>
+			<img class="moviePoster" src="" alt="">
+			<p class="movieSynopsis">
+			</p>
+		</article>
+		</a>
+		<!--Add an "article" element 3: Feature 3-->
+		<a class="movieLink" href="">
+		<article class="verticalArticle">
+			<h4 class="movieTitle"></h4>
+			<img class="moviePoster" src="" alt="">
+			<p class="movieSynopsis">
+			</p>
+		</article>
+		</a>
+	</div>
+	
+	<script type="text/javascript" src="javascript/javascript.js"></script>
+	</main>	
+	<!--------------------------------------FOOTER AREA--------------------------------------->
+	<!--Add the "footer" section below "main" area-->
+	<footer>
+		<p>Copyright &copy;2018 EIT | Privacy Policy | Website development by Jesse Gray</p>
+		<p>Read the <a href="statement.html">statement of authenticity</a> <span>
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			View the <a href="bibliography.html">bibliography</a> </span>
+		</p>
+	</footer>
+</body>
+</html>

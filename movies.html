@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--============================================HEAD============================================-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="wiewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href='https://fonts.googleapis.com/css?family=Milonga' rel='stylesheet'>
+	<title>Movies</title>
+	<!--Tell Web-browser the external CSS file-->
+	<link href="css/style1.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<!--============================================BODY============================================-->
+<body onload="moviePageFunctions()">
+	<!--------------------------------------HEADER AREA--------------------------------------->
+	<!--Add "header" area on top: this area is always stuck on top of website, no scroll up-->
+	<header>
+		<!--Add logo element to the left hand side of the "header" area-->
+		<a href="index.html">
+			<img src="media/images/logo.jpg" id="logo" alt="Avatar" height="200" width="200" />
+		</a>
+		<!--Add a title element to the right hand side of the logo-->
+		<h1>King Reviews</h1>
+		<!--Add the "navigation bar" on the lef hand side of the "header" area-->
+		<nav>
+			<ul>
+				<li><a class="dropbtn" href="index.html">Home</a></li>
+				<li><div class="dropdown">
+					<button class="dropbtn">About</button>
+					<div class="dropdown-content">
+						<a href="aboutme.html">About Me</a>
+						<a href="aboutthesite.html">About the Site</a>
+					</div>
+					</div>
+				</li>
+				<li><div class="dropdown">
+					<a href="movies.html" class="dropbtn">Movies</a>
+					<div class="dropdown-content">
+						<a href="genres.html??genre=Sci-Fi">Sci-Fi</a>
+						<a href="genres.html??genre=Horror">Horror</a>
+						<a href="genres.html??genre=Action">Action</a>
+						<a href="genres.html??genre=Comedy">Comedy</a>
+						<a href="genres.html??genre=Drama">Drama</a>
+					</div>
+					</div>
+				</li>
+				<li><a class="dropbtn" href="comingsoon.html">Coming Soon</a></li>
+				<li><div class="dropdown">
+					<button class="dropbtn">News</button>
+					<div class="dropdown-content">
+						<a href="sitenews.html">Site News</a>
+						<a href="movienews.html">Movie News</a>
+					</div>
+					</div>
+				</li>
+				<li><div class="dropdown">
+					<button class="dropbtn">Contact</button>
+					<div class="dropdown-content">
+						<a href="socialmedia.html">Social Media</a>
+						<a href="contactinfo.html">Contact Info</a>
+					</div>
+					</div>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!---------------------------------------MAIN AREA---------------------------------------->
+	<!--Add the "main" area below "header" area-->
+	<main>
+	<div id="welcome">
+		<h2>Movies</h2>
+		<p>Movies are, in my opionion, the ultimate form of entertainment. Whether your going out to the cinema to watch a letest release with friends, or on the couch with family on a stormy night, they are a way for us to escape our reality, and experience something... else. Whether it be to the fantasy realms of Middle Earth, Hogwarts, or Narmia, or perhaps the battlefields of wars gone by, or maybe we like to live on the edge and see what it is like to be hunted by a serial killer. Whatever genre you enjoy, they nall allow us to see through another set of eyes, even if only for a couple of hours.<br><br>Just as in life, there are many kinds of movies, and many genres, it is on this page that you will find a selection of genres to explore, chose one to find all moives I have reviewed within that genre. There are only 5 genres currently supported within the site, but more a planned in the future! If you have any ideas of genres that I should look into, let me know on the contact info page and I will look into it.
+		</p>
+	</div>
+	<div id="carousel">
+		<!--Add an "article" element 1: Genre 1-->
+		<div>
+		<a class="carouselLink" href=""><article class="verticalArticle" onmouseover="document.getElementById('ambient1').play()" onmouseout="document.getElementById('ambient1').pause()">
+			<audio id="ambient1" class="carouselAmbientAudio" src="" type="audio/mpeg"></audio>
+			<h4 class="carouselTitle"></h4>
+			<p class="carouselSynopsis">GENRE SYNOPSIS
+			</p>
+			<img class="carouselPoster" src="" alt="">
+		</article></a></div>
+		<!--Add an "article" element 2: Genre 2-->
+		<div><a class="carouselLink" href=""><article class="verticalArticle" onmouseover="document.getElementById('ambient2').play()" onmouseout="document.getElementById('ambient2').pause()">
+			<audio id="ambient2" class="carouselAmbientAudio" src="" type="audio/mpeg"></audio>
+			<h4 class="carouselTitle"></h4>
+			<p class="carouselSynopsis">GENRE SYNOPSIS
+			</p>
+			<img class="carouselPoster" src="" alt="">
+		</article></a></div>
+		<!--Add an "article" element 3: Genre 3-->
+		<div><a class="carouselLink" href=""><article class="verticalArticle" onmouseover="document.getElementById('ambient3').play()" onmouseout="document.getElementById('ambient3').pause()">
+			<audio id="ambient3" class="carouselAmbientAudio" src="" type="audio/mpeg"></audio>
+			<h4 class="carouselTitle"></h4>
+			<p class="carouselSynopsis">GENRE SYNOPSIS
+			</p>
+			<img class="carouselPoster" src="" alt="">
+		</article></a></div>
+	</div>
+	
+	<audio id="projector" src="media/audio/projectorflapping.wav" type="audio/wav"></audio>
+	<a class="prev" onclick="plusGenres(-1); document.getElementById('projector').play()">&#10094;<br>Previous</a>
+	<a class="next" onclick="plusGenres(1); document.getElementById('projector').play()">&#10095;<br>Next</a>
+	
+	<script type="text/javascript" src="javascript/javascript.js"></script>
+	</main>	
+	<!--------------------------------------FOOTER AREA--------------------------------------->
+	<!--Add the "footer" section below "main" area-->
+	<footer>
+		<p>Copyright &copy;2018 EIT | Privacy Policy | Website development by Jesse Gray</p>
+		<p>Read the <a href="statement.html">statement of authenticity</a> <span>
+			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			View the <a href="bibliography.html">bibliography</a> </span>
+		</p>
+	</footer>
+</body>
+</html>
